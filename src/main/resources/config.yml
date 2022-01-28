@@ -1,0 +1,87 @@
+allow-reports:
+  - 'Hacks'
+  - 'KillAura'
+messages:
+  prefix: "&d[bstaff] "
+  reload: "%prefix% &aSe ha recargado la configuracion exitosamente!"
+  no-permission: "%prefix% &cNo tienes permiso para ejecutar este comando!"
+  staff:
+    chat:
+      format: "&7(&b%server%&7) &f%player%: &7%message%"
+      activated: "%prefix% &aHas activado el chat de los staff! &c(Ten cuidado con lo que escribes!)"
+      deactivated: "%prefix% &cHas desactivado el chat de los staff! &a(Escribe con normalidad!)"
+      error-messages: "%prefix% &cPara cambiar el chat, primero debes activar los mensajes de staffs!"
+      messages:
+        activated: "%prefix% &aAhora puedes ver el chat de los staff! &c(No compartas este chat!)"
+        deactivated: "%prefix% &cYa no puedes ver el chat de los staff!"
+    server:
+      connect: "%prefix% &aTe has conectado al servidor &e%server%"
+      join: "%prefix% &aEl staff &e%player% &ase ha unido al servidor!"
+      quit: "%prefix% &cEl staff &e%player% &cha salido del servidor!"
+      switch:
+        clickable:
+          - '%prefix% &aEl staff &e%player% &ase ha movido al servidor '
+          - '&e%server%'
+        hover:
+          - '&bVe hasta el staff!'
+  report:
+    bypass: "%prefix% &cNo puedes reportar a este jugador!"
+    same-player: "%prefix% &cNo puedes reportarte a ti mismo!"
+    offline-target: "%prefix% &cEl jugador al que intentas reportar está desconectado!"
+    other-reason: "%prefix% &cLas razones para reportar son las siguientes: &eHacks&c, &eKillAura"
+    success: "%prefix% &aEl reporte se ha enviado con exito!"
+    usage: "%prefix% &cUso: /report player reason"
+    notify:
+      clickable:
+        - '%prefix% &aEl jugador &e%player% &areporto a '
+        - '&c%reported%'
+        - ' &apor &b%reason%'
+      hover:
+        - '&bVe hasta el jugador reportado!'
+      activated: "%prefix% &aHas activado las notificaciones de reporte!"
+      deactivated: "%prefix% &cHas desactivado las notificaciones de reporte!"
+  request:
+    answer:
+      success: "%prefix% &aAcabas de responder una peticion"
+      others-success: "%prefix% &e%author% &aha respondido a la peticion de &e%player%"
+      already: '%prefix% &cEsta peticion ya ha sido respondida por &e%author%'
+      no-exist: "%prefix% &cEsta peticion no existe!"
+      usage: "%prefix% &cUso: /request answer message"
+      same-player: "%prefix% &cNo puedes responderte a ti mismo!"
+      format:
+        - '&7&m                      '
+        - '%prefix% &eTu solicitud/peticion ha sido respondida.'
+        - '&ePor: &b%author%'
+        - '&eMsg: &a%answer%'
+        - '&7&m                      '
+    success: "%prefix% &aHas pedido ayuda exitosamente!"
+    usage: "%prefix% &cUso: /request message"
+    notify:
+      clickable:
+        - '%prefix% &aEl jugador '
+        - '&e%player%'
+        - ' &asolicito: &b%reason%'
+      hover:
+        - '&bVe hasta el jugador!'
+      activated: "%prefix% &aHas activado las notificaciones de ayuda!"
+      deactivated: "%prefix% &cHas desactivado las notificaciones de ayuda!"
+  help:
+    - '&f&m       &r  &dBungeeStaff  &f&m       '
+    - '&7- /bstaff help - &fmuestra la lista de comandos!'
+    - '&7- /bstaff reload - &frecarga la configuracion del plugin!'
+    - '&7- /togglealerts staffchat - &factiva/desactiva la vision del chat del staff!'
+    - '&7- /togglealerts reports - &factiva/desactiva las notificaciones de reportes!'
+    - '&7- /togglealerts requests - &factiva/desactiva las notificaciones de ayuda/solicitudes!'
+    - '&7- /staffchat(sc) - &factiva/desactiva el chat de staffs!'
+    - '&7- /report player razon - &freporta a un jugador con una razon especifica!'
+    - '&7- /report list - &fmuestra la lista de reportes!'
+    - '&7- /request message - &fsolicita ayuda'
+    - '&7- /request list - &fmuestra la lista de ayuda/solicitudes!'
+    - '&f&m       &r  &dBungeeStaff  &f&m       '
+#bstaff.use - la mayoria de cosas de un staff, avisar cuando un staff sale, entra, se mueve de servidor etc
+#bstaff.report.notify - /togglealerts reports
+#bstaff.staffchat.notify - /togglealerts staffchat
+#bstaff.request.notify - /togglealerts requests
+#bstaff.report - /report player reason
+#bstaff.request - /request message
+#bstaff.reload - /bstaff reload

@@ -1,0 +1,5 @@
+name: BungeeStaff
+version: '${project.version}'
+main: com.francobm.bungeestaff.BungeeStaff
+author: FrancoBM
+description: Staff for this proxy.
